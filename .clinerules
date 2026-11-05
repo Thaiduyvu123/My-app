@@ -1,0 +1,18 @@
+# QUY TẮC DỰ ÁN MOVIE BUDDY
+
+## Cấu trúc tài liệu:
+- **Tài liệu tổng quan & Kiến trúc:** `movie-buddy-docs/docs/PRD.md`, `movie-buddy-docs/docs/ARCHITECTURE.md`
+- **Giao diện & UI Reference:** `movie-buddy-docs/docs/DESIGN_SYSTEM.md`, `movie-buddy-docs/docs/SCREENS.md`, `movie-buddy-docs/docs/ui-reference/`
+- **Database & API:** `movie-buddy-docs/docs/DATABASE.md`, `movie-buddy-docs/docs/API_SPEC.md`, `movie-buddy-docs/docs/BUSINESS_RULES.md`
+- **Quy tắc bảo mật & Code:** `movie-buddy-docs/docs/SAFETY_PRIVACY.md`, `movie-buddy-docs/docs/TESTING.md`
+
+## Các module ứng dụng:
+- `/mobile`: App người dùng (React Native / Flutter / Mobile framework)
+- `/backend`: REST API Server chính
+- `/admin`: Dashboard quản trị
+- `/face-service`: Service xử lý nhận diện khuôn mặt / Liveness check
+
+## Nguyên tắc hoạt động của Roo Code:
+1. Đọc tài liệu liên quan trước khi triển khai bất kỳ module nào.
+2. Code từng module một cách độc lập, không tự ý sửa đổi toàn bộ dự án cùng lúc.
+3. Luôn bám sát thiết kế UI trong `movie-buddy-docs/docs/ui-reference/`.
